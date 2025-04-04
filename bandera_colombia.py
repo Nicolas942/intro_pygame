@@ -39,7 +39,7 @@ pygame.display.flip()
 
 while True:
     event = pygame.event.wait()
-    if event == pygame.QUIT:
+    if event.type == pygame.QUIT:
         break
 
 pygame.quit()
