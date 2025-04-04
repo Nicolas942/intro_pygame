@@ -123,4 +123,4 @@ while True:
 pygame.quit()
 ```
 
-![Bandera de Colombia](bandera_colombia.png.jpg "Bandera de Colombia")
+![Bandera de Colombia](bandera_colombia.jpg "Bandera de Colombia")
