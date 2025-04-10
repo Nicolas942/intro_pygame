@@ -76,7 +76,11 @@ while True:
     # Dibujar un arco de circunferencia
     pygame.draw.arc(ventana, cian, (300, 25, 180, 150), PI/2, PI, 1)
 
-
+    # Agregar texto
+    # Estamos creando una fuente de tipo arial, tamaño 15, negrilla y cursiva
+    fuente_arial = pygame.font.SysFont("arial", 35, 1, 1)
+    texto = fuente_arial.render("Sistemas Guanenta", 1 , blanco)
+    ventana.blit(texto, (50,50))
 
     # Actualiza la visializacion de la ventana
     pygame.display.flip()
