@@ -159,7 +159,7 @@ pygame.quit()
 - Si no hay ninguno, se obtiene una colección vacia
 
 ```Python
-#Usamos un bucle for para tecorrer todos los eventos de la colección optenida al allamar la finción get
+#Usamos un bucle for para recorrer todos los eventos de la colección obtenida al llamar la función get
 for event in pygame.event.get():
     if event.type == pygame.KEYDOWN:
         if event.key == pygame.K_ESCAPE:
