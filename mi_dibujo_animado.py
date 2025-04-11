@@ -33,9 +33,16 @@ fuente_arial = pygame.font.SysFont("arial", 30, 1, 1)
 
 clock = pygame.time.Clock()
 
+arbol = pygame.image.load("img/árbol.png")
+arbol = pygame.transform.scale2x(arbol)
+
+
 XX = 25
-MOVIMIENTO = 10
-color_sol = amarillo
+MOVIMIENTO = 2.5
+
+pupila_dre = 480
+pupila_izq = 420
+
 
 while True:
 
@@ -50,17 +57,19 @@ while True:
 
     XX = XX + MOVIMIENTO
 
-    if XX >= 700:
-        XX = 700
-        MOVIMIENTO = -10
-        if color_sol == amarillo:
-            color_sol = gris_luna
-        else:
-            color_sol = amarillo
+    if XX >= 385:
+        XX = -175
+        MOVIMIENTO = 2.5
 
-    elif XX <= 80:
-        XX = 80
-        MOVIMIENTO = 10
+    elif XX >= 200:
+        pupila_dre = 500
+        pupila_izq = 440
+    else:
+        pupila_dre = 480
+        pupila_izq = 420
+
+
+
 
     texto = fuente_arial.render("Colegio San José De Guanentá", True, morado)
     ventana.blit(texto, (200, 25))
@@ -71,12 +80,10 @@ while True:
     nombre = fuente_arial.render("Nicolás Alfonso Cabrera Suárez", True, azul_cian)
     ventana.blit(nombre, (0, 670))
 
-    if color_sol == amarillo:
-        color_fondo = verde
-    else:
-        color_fondo = gris
 
-    pygame.draw.rect(ventana, color_fondo, (25, 125, 750, 500))
+
+    pygame.draw.rect(ventana, verde, (25, 125, 750, 500))
+    
 
     pygame.draw.circle(ventana, rosa_chicle, (225, 500), 40)
     pygame.draw.rect(ventana, violeta, (235, 460, 15, 80))
@@ -101,10 +108,15 @@ while True:
     pygame.draw.circle(ventana, blanco, (430, 370), 20)
     pygame.draw.circle(ventana, blanco, (490, 370), 20)
     pygame.draw.circle(ventana, rojo, (460, 405), 15)
-    pygame.draw.circle(ventana, cafe, (480, 370), 5)
-    pygame.draw.circle(ventana, cafe, (420, 370), 5)
+    
+    # Pupilas
+    pygame.draw.circle(ventana, cafe, (pupila_dre, 370), 5)
+    pygame.draw.circle(ventana, cafe, (pupila_izq, 370), 5)
+    
+    # árbol
+    ventana.blit(arbol, (XX, 280))
 
-    pygame.draw.circle(ventana, color_sol, (XX, 160), 30)
+    
 
     pygame.display.flip()
 
