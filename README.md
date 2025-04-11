@@ -144,7 +144,7 @@ pygame.quit()
 
     - Permite especificar el número maximo de fotogramas que se muestran por segundo y por tanto limitar y controlar la velocidad de ejecución del juego
 
-    -Si insertamos en un bucle de juego la siguiente line, garantizamos que nunca sera más rapido de 50 fotogramas por segundo:`Clock.tick(50)` 
+    - Si insertamos en un bucle de juego la siguiente line, garantizamos que nunca sera más rapido de 50 fotogramas por segundo:`Clock.tick(50)` 
 
 ### Gestión de eventos
 
