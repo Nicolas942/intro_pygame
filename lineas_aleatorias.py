@@ -51,6 +51,4 @@ while True:
 
         pygame.draw.line(ventana, color_aleatorio, (linea_x, linea_y), (tamaño1,tamaño2))
 
-        
-
     pygame.display.flip()
