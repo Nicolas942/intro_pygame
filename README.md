@@ -59,7 +59,7 @@
     
     - Elemento geométrico
 
-    - Linea, poligono, imagen, texto que se mmuestra en la pantalla
+    - Linea, poligono, imagen, texto que se muestra en la pantalla
 
     - El poligono se puede o no rellenar de color
 
