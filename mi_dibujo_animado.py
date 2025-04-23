@@ -1,6 +1,9 @@
 import pygame
 import sys
+<<<<<<< HEAD
 import math
+=======
+>>>>>>> 4f933c2 (Actualización)
 
 verde = (19, 255, 0)
 verde_claro = (103, 187, 41)
@@ -22,8 +25,11 @@ naranja = (255, 140, 0)
 violeta = (138, 43, 226)
 verde_menta = (152, 255, 152)
 
+<<<<<<< HEAD
 PI = math.pi
 
+=======
+>>>>>>> 4f933c2 (Actualización)
 pygame.init()
 
 ventana = pygame.display.set_mode((800, 700))
@@ -112,6 +118,7 @@ while True:
     # Pupilas
     pygame.draw.circle(ventana, cafe, (pupila_dre, 370), 5)
     pygame.draw.circle(ventana, cafe, (pupila_izq, 370), 5)
+<<<<<<< HEAD
     
     # árbol
     ventana.blit(arbol, (XX, 280))
@@ -119,4 +126,11 @@ while True:
     
 
     pygame.display.flip()
+=======
+    
+    # árbol
+    ventana.blit(arbol, (XX, 280))
+
+    
+>>>>>>> 4f933c2 (Actualización)
 

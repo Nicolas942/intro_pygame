@@ -181,3 +181,26 @@ while True:
 
 - Devuelve solo uno de los eventos de la cola de espera
 
+## Sonidos en pygame
+
+- pygame.mixer : módulo que permite la gestión del sonido
+
+- music : submodulo que gestiona la musica de fondo. Necesariamente solo hay uno a la vez
+
+- Sound: objeto de mixer, que se puede instanciar varias veces para usarlo en efectos de sonido del juego
+
+### Archivos de sonido
+
+- Se reccomiendo usar 2 formatos principalmente:
+    
+    - Formato WAV(Waveform Audio File Format)
+
+    - Formato abiento y gratuito OGG
+
+### Canne (canal) en Pygame
+
+- Un juego tiene varios canales de sonido
+
+- Se puede asignar un sonido al canal número 1 y otro diferente al número 2
+
+- Entonses es posible reproducir sonidos simultaneamente activando la lectura en diferentes canales
