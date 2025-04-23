@@ -22,8 +22,8 @@ pygame.mixer.music.play(1,0.0)
 
 # efectos sonoros 
 GALLO = pygame.mixer.Sound("sounds/gallo.ogg")
-CUERVO = pygame.mixer.Sound("sound/cuervo.ogg")
-BICI = pygame.mixer.Sound("sound/timbre.ogg")
+CUERVO = pygame.mixer.Sound("sounds/cuervo.ogg")
+BICI = pygame.mixer.Sound("sounds/timbre.ogg")
 
 #bucle del juego
 
@@ -34,7 +34,26 @@ while continuar:
             continuar = False
         # detecta si se opriio una tecla
         elif event.type == pygame.KEYDOWN:
-            pass
+            if event.key == pygame.K_ESCAPE:
+                continuar == False
+            elif event.key == pygame.K_o:
+                GALLO.play()
+            elif event.key == pygame.K_c:
+                CUERVO.play()
+            elif event.key == pygame.K_v:
+                BICI.play()
+            elif event.key == pygame.K_DOWN:
+                VOLUMEN = pygame.mixer.music.get_volume() - 0.1
+                pygame.mixer.music.set_volume(VOLUMEN)
+                GALLO.set_volume(VOLUMEN)
+                CUERVO.set_volume(VOLUMEN)
+                BICI.set_volume(VOLUMEN)
+            elif event.key == pygame.K_UP:
+                VOLUMEN = pygame.mixer.music.get_volume() + 0.1
+                pygame.mixer.music.set_volume(VOLUMEN)
+                GALLO.set_volume(VOLUMEN)
+                CUERVO.set_volume(VOLUMEN)
+                BICI.set_volume(VOLUMEN)
 
 pygame.display.flip()
         
