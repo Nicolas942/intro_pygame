@@ -39,7 +39,6 @@ MOVIMIENTO = 2.5
 pupila_dre = 480
 pupila_izq = 420
 
-# Bucle principal
 while True:
     clock.tick(50)
 
