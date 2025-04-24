@@ -75,6 +75,8 @@ Te permite:
 
     - Revisar colisiones entre ellos.
 
+## Código
+
 ```Python
 import pygame
 
