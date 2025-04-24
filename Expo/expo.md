@@ -7,7 +7,7 @@ Te permite:
 
     - Ponerle una imagen y una posición al objeto.
 
-    - Agruparlos para moverlos y dibujarlos todos juntos.
+    - Los objetos trabajan por separado
 
     - Aprovechar cosas listas para detectar choques o animarlos fácilmente.
 
