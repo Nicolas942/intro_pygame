@@ -119,3 +119,12 @@ while running:
 pygame.quit()
 
 ```
+
+### Diferencias
+
+Sprite es un solo objeto del juego (como un personaje, enemigo, etc.).
+
+Group es un conjunto de sprites que puedes manejar juntos.
+
+Sprite = una ficha
+Group = una caja con muchas fichas
